@@ -25,7 +25,7 @@ function renderCartDrawer(cart) {
   }).join('');
   var totalPrice = cart.reduce(function(s, i) { return s + i.price * i.quantity; }, 0);
   content.innerHTML += '<div class="cart-total"><span>Subtotal</span><strong>$' + totalPrice.toFixed(2) + '</strong></div>' +
-    '<button class="button" onclick="alert('Checkout coming soon')">CHECKOUT</button>';
+    '<button class="button" onclick="showCheckoutMsg()">CHECKOUT</button>';
 }
 function toggleCart(open) {
   var drawer = document.querySelector('[data-cart-drawer]');
@@ -71,6 +71,8 @@ document.addEventListener('click', function(e) {
   saveCart(cart);
   renderCartDrawer(cart);
 });
+
+function showCheckoutMsg() { alert('Checkout coming soon'); }
 
 // Carousel
 (function() {

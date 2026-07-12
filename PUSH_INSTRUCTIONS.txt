@@ -1,0 +1,13 @@
+﻿PUSH ALL PRs (run in order):
+=============================
+cd C:\Users\ADMINI~1\AppData\Local\Temp\zenith_tmp_repo
+git push origin feature/homepage-redesign          # PR 1 - Homepage
+git push origin feature/footer-redesign             # PR 2 - Footer
+git push origin feature/collection-pages            # PR 3 - Collection pages
+git push origin feature/product-detail              # PR 4 - Product detail
+
+Create PRs via GitHub UI or:
+  gh pr create --base main --head feature/homepage-redesign --title "PR 1: Homepage Redesign"
+  gh pr create --base main --head feature/footer-redesign --title "PR 2: Multi-column Footer"
+  gh pr create --base main --head feature/collection-pages --title "PR 3: Collection Pages"
+  gh pr create --base main --head feature/product-detail --title "PR 4: Product Detail Page"

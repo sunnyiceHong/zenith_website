@@ -27,3 +27,15 @@
 .cart-drawer-content { flex: 1; overflow: auto; }
 .empty-cart { margin: auto; text-align: center; }
 .empty-cart p { margin-bottom: 24px; }
+.legal-text { margin: 14px 0 0; color: #aaa8a3; font-size: 9px; line-height: 1.6; }
+.legal-text a { color: #f8f4ef; text-decoration: underline; }
+.footer-links a svg { vertical-align: middle; margin-right: 5px; }
+.footer-links > div:first-child { grid-column: 1 / 2; }
+.footer-links > div:nth-child(2) { grid-column: 2 / 3; }
+.footer-links > div:nth-child(3) { grid-column: 3 / 4; }
+.footer-links > div:nth-child(4) { grid-column: 4 / 5; }
+.footer-links > div:nth-child(5) { grid-column: 5 / 6; }
+.footer-links > div:nth-child(6) { grid-column: 6 / 7; }
+.footer-links > div:nth-child(7) { grid-column: 7 / 8; }
+@media (max-width: 900px) { .footer-links { grid-template-columns: 1fr 1fr 1fr; } .footer-brand { grid-column: 1 / -1; } }
+@media (max-width: 700px) { .footer-links { grid-template-columns: 1fr 1fr; } .footer-brand { grid-column: 1 / -1; } }
