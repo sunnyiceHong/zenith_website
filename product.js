@@ -1,1 +1,12 @@
-const productCount = document.querySelector('[data-cart-count]');const savedCount = localStorage.getItem('zenith-cart-count') || '0';if (productCount) productCount.textContent = savedCount;document.querySelector('[data-product-add]')?.addEventListener('click', () => { localStorage.setItem('zenith-cart-count', '1'); if (productCount) productCount.textContent = '1'; });document.querySelectorAll('.shade').forEach((shade) => shade.addEventListener('click', () => { document.querySelector('.shade.active')?.classList.remove('active'); shade.classList.add('active'); });
+const productCount = document.querySelector('[data-cart-count]');
+const savedCount = localStorage.getItem('zenith-cart-count') || '0';
+
+if (productCount) productCount.textContent = savedCount;
+document.querySelector('[data-product-add]')?.addEventListener('click', () => {
+  localStorage.setItem('zenith-cart-count', '1');
+  if (productCount) productCount.textContent = '1';
+});
+document.querySelectorAll('.shade').forEach((shade) => shade.addEventListener('click', () => {
+  document.querySelector('.shade.active')?.classList.remove('active');
+  shade.classList.add('active');
+}));
