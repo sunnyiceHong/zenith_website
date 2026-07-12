@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Bag | Zenith</title>
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">ZENITH</a>
+      <nav class="main-nav">
+        <a href="collections/new.html">NEW</a>
+        <a href="collections/best-sellers.html">BEST SELLERS</a>
+        <a href="collections/lips.html">LIPS</a>
+        <a href="collections/eyes.html">EYES</a>
+        <a href="collections/face.html">FACE</a>
+        <a href="collections/gifts.html">GIFTS &amp; SETS</a>
+      </nav>
+      <div class="header-actions">
+        <svg class="header-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-label="Search"><circle cx="10.5" cy="10.5" r="7.5"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+        <svg class="header-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-label="Account"><circle cx="12" cy="8" r="4"/><path d="M4 22c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <a class="bag-link" href="cart.html" aria-label="Open shopping bag">BAG <span data-cart-count>0</span></a>
+      </div>
+    </header>
+    <main class="cart-page">
+      <h1>Your Bag</h1>
+      <section data-cart-content></section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <div class="footer-brand">ZENI<span>T</span>H</div>
+        <div>
+          <p>BEST SELLERS</p>
+          <a href="collections/lips.html">Lip Collection</a>
+          <a href="collections/eyes.html">Eye Palettes</a>
+        </div>
+        <div>
+          <p>CUSTOMER SERVICE</p>
+          <a href="collections/new.html">Shipping Info</a>
+          <a href="collections/new.html">Returns & Exchanges</a>
+        </div>
+        <div>
+          <p>FOLLOW US</p>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Zenith Beauty. All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>
