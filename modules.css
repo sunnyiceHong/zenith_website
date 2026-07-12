@@ -1,4 +1,173 @@
-.products { background:#eeebe5; }.product-filter { display:flex; gap:18px; }.product-filter button { padding:0 0 5px; color:#888; border:0; border-bottom:1px solid transparent; background:transparent; cursor:pointer; font:11px Manrope,sans-serif; }.product-filter .is-active { color:var(--ink); border-color:var(--ink); }.product-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }.product-image { position:relative; display:block; height:clamp(275px,30vw,430px); overflow:hidden; background:#e3ded6; }.product-image img { width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }.product-card:hover img { transform:scale(1.04); }.product-badge { position:absolute; z-index:1; top:13px; left:13px; padding:5px 7px; background:var(--paper); font:8px "DM Mono",monospace; letter-spacing:.06em; }.product-meta { display:flex; justify-content:space-between; padding-top:14px; gap:8px; }.product-meta h3 { margin:0 0 4px; font-size:12px; font-weight:600; }.product-meta p { margin:0; color:#6f6e6b; font:9px "DM Mono",monospace; letter-spacing:.02em; }.product-meta b { font:500 11px Manrope,sans-serif; white-space:nowrap; }.ritual { min-height:620px; display:grid; grid-template-columns:1fr 1fr; background:#dcd4ca; }.ritual__image { overflow:hidden; }.ritual__image img { width:100%; height:100%; object-fit:cover; }.ritual__copy { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:clamp(50px,9vw,145px); }.ritual__copy h2 { margin:0; font:500 clamp(43px,5vw,75px)/1.04 "Playfair Display",serif; letter-spacing:-.045em; }.ritual__copy h2 em { color:var(--wine); }.ritual__copy>p:not(.eyebrow) { max-width:270px; margin:27px 0 31px; line-height:1.8; }
-@media(max-width:720px){.product-grid{grid-template-columns:repeat(2,1fr);gap:25px 11px}.product-filter{display:none}.product-image{height:235px}.product-meta{display:block}.product-meta b{display:block;margin-top:8px}.ritual{grid-template-columns:1fr;min-height:0}.ritual__image{height:450px}.ritual__copy{min-height:440px;padding:75px 25px}}
-.site-footer { color:#f8f4ef; background:#242422; }.newsletter { display:grid; grid-template-columns:1fr 1fr; gap:40px; padding:clamp(62px,8vw,118px) clamp(20px,8.5vw,136px); border-bottom:1px solid #62605d; }.newsletter h2 { margin:0; font:500 clamp(36px,4.5vw,62px)/1.05 "Playfair Display",serif; letter-spacing:-.04em; }.newsletter form { align-self:end; }.newsletter label { display:block; margin-bottom:16px; color:#d3d0ca; font-size:11px; }.email-field { display:flex; align-items:center; border-bottom:1px solid #aaa8a4; }.email-field input { width:100%; padding:12px 0; border:0; outline:0; color:#fff; background:transparent; font:13px Manrope,sans-serif; }.email-field input::placeholder { color:#989793; }.email-field button { border:0; color:#fff; background:transparent; cursor:pointer; font-size:22px; }.footer-links { display:grid; grid-template-columns:2fr repeat(3,1fr); gap:25px; padding:58px clamp(20px,8.5vw,136px); }.footer-brand { align-self:start; font:600 22px "DM Mono",monospace; letter-spacing:.15em; }.footer-brand span { color:#c98b99; }.footer-links div { display:flex; flex-direction:column; gap:10px; }.footer-links p { margin:0 0 8px; color:#b7b4af; font:9px "DM Mono",monospace; letter-spacing:.13em; }.footer-links div a { color:#f4f1ec; font-size:11px; }.footer-bottom { display:flex; justify-content:space-between; padding:18px clamp(20px,8.5vw,136px); border-top:1px solid #454541; color:#aaa8a3; font:9px "DM Mono",monospace; letter-spacing:.08em; }.footer-bottom a { color:#f8f4ef; }
-@media(max-width:720px){.main-nav.is-open { position:absolute; z-index:4; top:93px; left:0; right:0; display:flex; flex-direction:column; gap:22px; padding:27px 20px 32px; background:var(--paper); border-top:1px solid var(--line); }.newsletter { grid-template-columns:1fr; padding:64px 20px; }.footer-links { grid-template-columns:1fr 1fr; padding:45px 20px; }.footer-brand { grid-column:1/-1; margin-bottom:15px; }.footer-bottom { display:block; padding:17px 20px; }.footer-bottom span,.footer-bottom a { display:block; margin:8px 0; }}
+/* ══════════════════════════════════════════
+   Product Grids, Ritual, Footer — Dark Theme
+   ══════════════════════════════════════════ */
+
+/* ── Products Section ── */
+.products{background:var(--soft)}
+.product-filter{display:flex;gap:18px}
+.product-filter button{
+  padding:0 0 5px;color:var(--muted);
+  border:0;border-bottom:1px solid transparent;
+  background:transparent;cursor:pointer;
+  font:11px var(--font-sans);
+  transition:color .2s,border-color .2s;
+}
+.product-filter button:hover{color:var(--ink)}
+.product-filter .is-active{color:var(--ink);border-color:var(--ink)}
+
+/* ── Product Grid ── */
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.product-card{position:relative}
+.product-image{
+  position:relative;display:block;
+  height:clamp(275px,30vw,430px);
+  overflow:hidden;
+  background:var(--soft);
+}
+.product-image img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease;
+}
+.product-card:hover img{transform:scale(1.04)}
+.product-badge{
+  position:absolute;z-index:1;top:13px;left:13px;
+  padding:5px 7px;
+  background:var(--surface);
+  color:var(--ink);
+  font:8px var(--font-mono);letter-spacing:.06em;
+}
+.product-meta{
+  display:flex;justify-content:space-between;
+  padding-top:14px;gap:8px;
+}
+.product-meta h3{margin:0 0 4px;font-size:12px;font-weight:600;color:var(--ink)}
+.product-meta p{
+  margin:0;color:var(--muted);
+  font:9px var(--font-mono);letter-spacing:.02em;
+}
+.product-meta b{font:500 11px var(--font-sans);white-space:nowrap;color:var(--ink)}
+
+/* ── Ritual Section ── */
+.ritual{
+  min-height:620px;
+  display:grid;grid-template-columns:1fr 1fr;
+  background:var(--soft);
+}
+.ritual__image{overflow:hidden}
+.ritual__image img{width:100%;height:100%;object-fit:cover}
+.ritual__copy{
+  display:flex;flex-direction:column;
+  justify-content:center;align-items:flex-start;
+  padding:clamp(50px,9vw,145px);
+  color:var(--ink);
+}
+.ritual__copy h2{
+  margin:0;
+  font:500 clamp(43px,5vw,75px)/1.04 var(--font-serif);
+  letter-spacing:-.045em;
+}
+.ritual__copy>p:not(.eyebrow){
+  max-width:270px;margin:27px 0 31px;
+  line-height:1.8;color:var(--muted);
+}
+
+/* ── Site Footer ── */
+.site-footer{
+  color:var(--ink);
+  background:#0d0d0d;
+  border-top:1px solid var(--line);
+}
+.newsletter{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;
+  padding:clamp(62px,8vw,118px) clamp(20px,8.5vw,136px);
+  border-bottom:1px solid var(--line);
+}
+.newsletter h2{
+  margin:0;
+  font:500 clamp(36px,4.5vw,62px)/1.05 var(--font-serif);
+  letter-spacing:-.04em;
+}
+.newsletter form{align-self:end}
+.newsletter label{
+  display:block;margin-bottom:16px;
+  color:var(--muted);font-size:11px;
+}
+.email-field{
+  display:flex;align-items:center;
+  border-bottom:1px solid var(--line);
+}
+.email-field input{
+  width:100%;padding:12px 0;border:0;outline:0;
+  color:var(--ink);background:transparent;
+  font:13px var(--font-sans);
+}
+.email-field input::placeholder{color:var(--muted)}
+.email-field button{
+  border:0;color:var(--ink);background:transparent;
+  cursor:pointer;font-size:22px;
+}
+.email-field button:hover{opacity:.6}
+
+/* ── Footer Links ── */
+.footer-links{
+  display:grid;
+  grid-template-columns:2fr repeat(3,1fr);
+  gap:25px;
+  padding:58px clamp(20px,8.5vw,136px);
+}
+.footer-brand{
+  align-self:start;
+  font:600 22px var(--font-mono);
+  letter-spacing:.15em;
+  color:var(--ink);
+}
+.footer-brand span{color:#c98b99}
+.footer-links div{display:flex;flex-direction:column;gap:10px}
+.footer-links p{
+  margin:0 0 8px;
+  color:var(--muted);
+  font:9px var(--font-mono);letter-spacing:.13em;
+}
+.footer-links div a{
+  color:var(--ink);font-size:11px;
+  transition:opacity .2s;
+}
+.footer-links div a:hover{opacity:.6}
+.footer-bottom{
+  display:flex;justify-content:space-between;
+  padding:18px clamp(20px,8.5vw,136px);
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font:9px var(--font-mono);letter-spacing:.08em;
+}
+.footer-bottom a{color:var(--ink)}
+
+/* ══════════════════════════════════════════
+   Responsive
+   ══════════════════════════════════════════ */
+@media(max-width:720px){
+  .product-grid{grid-template-columns:repeat(2,1fr);gap:25px 11px}
+  .product-filter{display:none}
+  .product-image{height:235px}
+  .product-meta{display:block}
+  .product-meta b{display:block;margin-top:8px}
+  .ritual{grid-template-columns:1fr;min-height:0}
+  .ritual__image{height:450px}
+  .ritual__copy{min-height:440px;padding:75px 25px}
+  .main-nav.is-open{
+    position:absolute;z-index:4;top:79px;left:0;right:0;
+    display:flex;flex-direction:column;gap:22px;
+    padding:27px 20px 32px;
+    background:var(--paper);
+    border-top:1px solid var(--line);
+  }
+  .newsletter{grid-template-columns:1fr;padding:64px 20px}
+  .footer-links{grid-template-columns:1fr 1fr;padding:45px 20px}
+  .footer-brand{grid-column:1/-1;margin-bottom:15px}
+  .footer-bottom{display:block;padding:17px 20px}
+  .footer-bottom span,.footer-bottom a{display:block;margin:8px 0}
+}
