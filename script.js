@@ -1,3 +1,18 @@
+// ── Fixed header offset ──
+document.body.classList.add('has-fixed-header');
+
+// ── Sticky header on scroll ──
+(function() {
+  var header = document.querySelector('[data-header]');
+  if (!header) return;
+  window.addEventListener('scroll', function() {
+    header.classList.toggle('is-scrolled', window.scrollY > 50);
+  });
+  // Set initial state
+  header.classList.toggle('is-scrolled', window.scrollY > 50);
+})();
+
+// ── Cart ──
 const cartKey = 'zenith-cart';
 function getCart() { return JSON.parse(localStorage.getItem(cartKey) || '[]'); }
 function saveCart(cart) { localStorage.setItem(cartKey, JSON.stringify(cart)); updateCartUI(cart); }
