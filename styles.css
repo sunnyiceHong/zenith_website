@@ -4,7 +4,7 @@
 
 /* ── Hero ── */
 .hero{
-  height:calc(100vh - 80px);
+  height:100vh;
   min-height:570px;
   position:relative;
   overflow:hidden;
