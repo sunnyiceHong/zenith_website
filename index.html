@@ -1,82 +1,35 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LUMIERE — 高级感美妆个护品牌。" />
-    <title>LUMIERE | 肌肤的柔光时刻</title>
+    <meta name="description" content="Zenith Beauty — makeup made for your own point of view." />
+    <title>Zenith | Modern Makeup</title>
     <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="modules.css" />
   </head>
   <body>
-    <div class="announcement">全场满 ¥299 免运费 · 新客享 9 折礼遇</div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="LUMIERE 首页">LUMIERE<span>°</span></a>
-      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false"><i></i><i></i></button>
-      <nav class="main-nav" aria-label="主导航">
-        <a href="#new">新品</a>
-        <a href="#face">面部</a>
-        <a href="#eyes">眼妆</a>
-        <a href="#lips">唇妆</a>
-        <a href="#ritual">护肤仪式</a>
+    <header class="site-header" data-header>
+      <button class="header-icon mobile-menu" aria-label="Open menu" data-menu-toggle><span></span><span></span></button>
+      <a class="brand" href="index.html" aria-label="Zenith home">ZENITH</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="collections/new.html">NEW</a>
+        <a href="collections/best-sellers.html">BEST SELLERS</a>
+        <div class="nav-dropdown"><a href="collections/lips.html">LIPS</a><div class="mega-menu"><div><b>LIPS</b><a href="collections/lips.html">View all</a><a href="collections/lips.html">Lipstick</a><a href="collections/lips.html">Lip Gloss</a><a href="collections/lips.html">Lip Stain</a></div><img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=700&q=85" alt="Lip collection" /></div></div>
+        <div class="nav-dropdown"><a href="collections/eyes.html">EYES</a><div class="mega-menu"><div><b>EYES</b><a href="collections/eyes.html">View all</a><a href="collections/eyes.html">Eyeshadow</a><a href="collections/eyes.html">Eyebrows</a><a href="collections/eyes.html">Mascara</a></div><img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=85" alt="Eye collection" /></div></div>
+        <div class="nav-dropdown"><a href="collections/face.html">FACE</a><div class="mega-menu"><div><b>FACE</b><a href="collections/face.html">View all</a><a href="collections/face.html">Foundation</a><a href="collections/face.html">Setting Powder</a><a href="collections/face.html">Blush & Bronzer</a></div><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Face collection" /></div></div>
+        <a href="collections/gifts.html">GIFTS & SETS</a>
       </nav>
-      <div class="header-actions">
-        <button class="icon-button" aria-label="搜索">⌕</button>
-        <button class="icon-button" aria-label="账户">♙</button>
-        <button class="icon-button cart-button" aria-label="购物袋">袋 <span>0</span></button>
-      </div>
+      <div class="header-actions"><button class="header-icon" aria-label="Search" data-search-toggle>⌕</button><button class="header-icon" aria-label="Account">♙</button><button class="bag-link" aria-label="Open shopping bag" data-cart-toggle>BAG <span data-cart-count>0</span></button></div>
     </header>
-
-    <main id="top">
-      <section class="hero" aria-label="夏日新品">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">THE NEW ESSENTIALS</p>
-          <h1>让光，<br />成为你的底色。</h1>
-          <p>为日常而生的轻盈妆护，用细腻光泽描绘真实肌肤。</p>
-          <a class="text-link" href="#new">探索新品 <span>→</span></a>
-        </div>
-        <div class="hero-credit">夏季限定 · 2026</div>
-      </section>
-
-      <section class="intro section-pad">
-        <p class="eyebrow">SIMPLE, SENSORY, YOURS</p>
-        <h2>少一点遮掩，<br />多一点自然而然。</h2>
-        <p>以纯粹配方、舒适肤感和克制色彩，留住每一刻恰好的光。</p>
-      </section>
-
-      <section id="new" class="collection section-pad">
-        <div class="section-heading">
-          <div><p class="eyebrow">NEW ARRIVALS</p><h2>本季新作</h2></div>
-          <a class="text-link" href="#products">查看全部 <span>→</span></a>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card feature-card--tall">
-            <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=1200&q=85" alt="柔雾唇釉产品" />
-            <div class="feature-card__copy"><p>柔雾水光唇釉</p><a href="#lips">立即探索 →</a></div>
-          </article>
-          <article class="feature-card">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=85" alt="彩妆刷与化妆品" />
-            <div class="feature-card__copy"><p>漫光底妆系列</p><a href="#face">立即探索 →</a></div>
-          </article>
-        </div>
-      </section>
-      <section id="products" class="products section-pad">
-        <div class="section-heading"><div><p class="eyebrow">EDITOR'S EDIT</p><h2>妆出柔光</h2></div><div class="product-filter"><button class="is-active">全部</button><button>底妆</button><button>眼妆</button><button>唇妆</button></div></div>
-        <div class="product-grid">
-          <article class="product-card" id="face"><a class="product-image" href="#top"><span class="product-badge">NEW</span><img src="https://images.unsplash.com/photo-1631730486571-226f1a07a4b0?auto=format&fit=crop&w=900&q=85" alt="澄光柔焦粉底液" /></a><div class="product-meta"><div><h3>澄光柔焦粉底液</h3><p>Second Skin Foundation</p></div><b>¥ 268</b></div></article>
-          <article class="product-card" id="eyes"><a class="product-image" href="#top"><span class="product-badge">BEST SELLER</span><img src="https://images.unsplash.com/photo-1583241800698-e8ab01830a65?auto=format&fit=crop&w=900&q=85" alt="微光四色眼影盘" /></a><div class="product-meta"><div><h3>微光四色眼影盘</h3><p>Quiet Light Palette</p></div><b>¥ 198</b></div></article>
-          <article class="product-card" id="lips"><a class="product-image" href="#top"><img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?auto=format&fit=crop&w=900&q=85" alt="云感丝绒唇膏" /></a><div class="product-meta"><div><h3>云感丝绒唇膏</h3><p>Soft Veil Lip Color</p></div><b>¥ 178</b></div></article>
-          <article class="product-card"><a class="product-image" href="#top"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85" alt="莹润唇蜜" /></a><div class="product-meta"><div><h3>莹润玻璃唇蜜</h3><p>Glossy Sheer Oil</p></div><b>¥ 168</b></div></article>
-        </div>
-      </section>
-      <section class="ritual" id="ritual"><div class="ritual__image"><img src="https://images.unsplash.com/photo-1556228841-8d6c7842c8e3?auto=format&fit=crop&w=1600&q=85" alt="极简护肤产品" /></div><div class="ritual__copy"><p class="eyebrow">DAILY RITUAL</p><h2>让护肤，<br /><em>慢下来。</em></h2><p>每一层轻薄触感，都为肌肤留下一点呼吸的余地。</p><a class="text-link" href="#top">开始你的仪式 <span>→</span></a></div></section>
+    <div class="search-panel" data-search-panel hidden><form action="collections/new.html"><input type="search" placeholder="Search" aria-label="Search" /><button aria-label="Submit search">→</button></form></div>
+    <main>
+      <section class="hero"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=2200&q=90" alt="Zenith beauty collection" /><div class="hero-copy"><p>THE POINT OF LIGHT</p><h1>Make it<br /><em>yours.</em></h1><a class="button button--light" href="collections/new.html">SHOP NEW</a></div></section>
+      <section class="editorial"><div><p class="kicker">ZENITH BEAUTY</p><h2>Beauty begins at<br />your own horizon.</h2></div><p>High-performance colour, considered textures and a little room for self-expression. Welcome to the point where everything comes into focus.</p></section>
+      <section class="feature-tiles"><a href="collections/lips.html"><img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=1200&q=85" alt="Lip colour collection" /><span><b>COLOUR THEORY</b><small>SHOP LIPS →</small></span></a><a href="collections/face.html"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=1200&q=85" alt="Face collection" /><span><b>SKIN, REFINED</b><small>SHOP FACE →</small></span></a></section>
     </main>
-    <footer class="site-footer">
-      <section class="newsletter"><div><p class="eyebrow">THE LUMIERE LETTER</p><h2>一些关于光的<br />新鲜事。</h2></div><form><label for="email">订阅获得新品、灵感与专属礼遇</label><div class="email-field"><input id="email" type="email" placeholder="你的电子邮箱" required /><button type="submit" aria-label="订阅">→</button></div></form></section>
-      <div class="footer-links"><a class="footer-brand" href="#top">LUMIERE<span>°</span></a><div><p>SHOP</p><a href="#new">新品上市</a><a href="#products">明星单品</a><a href="#ritual">护肤仪式</a></div><div><p>HELP</p><a href="#top">配送说明</a><a href="#top">退换货政策</a><a href="#top">订单查询</a></div><div><p>CONTACT</p><a href="mailto:hello@lumiere-beauty.com">hello@lumiere-beauty.com</a><a href="tel:+4000000000">400 000 0000</a></div></div>
-      <div class="footer-bottom"><span>© 2026 LUMIERE BEAUTY</span><span>MADE FOR EVERY LIGHT</span><a href="#top">回到顶部 ↑</a></div>
-    </footer>
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true"><div class="drawer-head"><b>YOUR BAG</b><button aria-label="Close bag" data-cart-close>×</button></div><div class="empty-cart"><p>Your bag is currently empty.</p><a class="button" href="collections/new.html">CONTINUE SHOPPING</a></div></aside><div class="scrim" data-scrim></div>
     <script src="script.js"></script>
   </body>
 </html>
