@@ -4,10 +4,10 @@
 
 <div class="announcement-bar">Free Shipping On Orders Over $59</div>
 
-<header class="site-header">
+<header class="site-header" data-header>
   <div class="site-header__top">
     <div class="header-item header-item--left">
-      <button class="mobile-nav-trigger medium-up--hide" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="mobile-nav-trigger medium-up--hide" data-menu-toggle aria-label="Open menu"><span></span><span></span><span></span></button>
       <form action="../collections/new.html" class="header-search-form small--hide"><button type="submit" class="header-search-btn" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10.5" cy="10.5" r="7.5"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg></button><input type="search" name="q" placeholder="Search..." /></form>
     </div>
     <div class="header-item header-item--center"><a class="brand" href="../index.html">ZENITH</a></div>
@@ -27,6 +27,13 @@
         <div class="nav-dropdown"><a href="eyes.html">EYES</a><div class="nav-dropdown__menu"><a href="eyes.html">Explorer Eyeshadow Palettes</a><a href="eyes.html">Eyeshadow</a><a href="eyes.html">Eyebrows</a><a href="eyes.html">Eyeliners</a><a href="eyes.html">Mascara</a></div></div>
         <div class="nav-dropdown"><a href="face.html">FACE</a><div class="nav-dropdown__menu"><a href="face.html">Foundation</a><a href="face.html">Setting Powder</a><a href="face.html">Blush &amp; Bronzer</a><a href="face.html">Highlighter</a></div></div>
         <div class="nav-dropdown"><a href="gifts.html">GIFTS &amp; SETS</a><div class="nav-dropdown__menu"><a href="gifts.html">Treasure Gifts</a><a href="gifts.html">Limited Sets</a></div></div>
+      </nav>
+      <nav class="main-nav-mobile" data-mobile-nav>
+        <a href="new.html">NEW</a><a href="best-sellers.html">BEST SELLERS</a>
+        <div class="nav-dropdown"><a href="lips.html" data-sub-toggle>LIPS</a><div class="nav-dropdown__menu"><a href="lips.html">ReadMe Lips</a><a href="lips.html">Lipstick</a><a href="lips.html">Lip Gloss</a><a href="lips.html">Lip Stain</a><a href="lips.html">Lip Sets</a></div></div>
+        <div class="nav-dropdown"><a href="eyes.html" data-sub-toggle>EYES</a><div class="nav-dropdown__menu"><a href="eyes.html">Explorer Eyeshadow Palettes</a><a href="eyes.html">Eyeshadow</a><a href="eyes.html">Eyebrows</a><a href="eyes.html">Eyeliners</a><a href="eyes.html">Mascara</a></div></div>
+        <div class="nav-dropdown"><a href="face.html" data-sub-toggle>FACE</a><div class="nav-dropdown__menu"><a href="face.html">Foundation</a><a href="face.html">Setting Powder</a><a href="face.html">Blush &amp; Bronzer</a><a href="face.html">Highlighter</a></div></div>
+        <div class="nav-dropdown"><a href="gifts.html" data-sub-toggle>GIFTS &amp; SETS</a><div class="nav-dropdown__menu"><a href="gifts.html">Treasure Gifts</a><a href="gifts.html">Limited Sets</a></div></div>
       </nav>
     </div>
   </div>
@@ -60,13 +67,20 @@
   <div class="footer__menus">
     <div class="footer__blocks">
       <div class="footer__block"><p class="footer__title">BEST SELLERS</p><a href="../collections/lips.html">ReadMe Lips</a><a href="../collections/eyes.html">Explorer Palettes</a><a href="../collections/face.html">Setting Powder</a></div>
-      <div class="footer__block"><p class="footer__title">ABOUT US</p><a href="#">Contact Us</a><a href="#">Our Brand</a><a href="#">Our Story</a></div>
-      <div class="footer__block"><p class="footer__title">CUSTOMER SERVICE</p><a href="#">Shipping Info</a><a href="#">Returns &amp; Exchanges</a><a href="#">Order Tracking</a><a href="#">FAQs</a></div>
+      <div class="footer__block"><p class="footer__title">ABOUT US</p><a href="#">Contact Us</a><a href="#">Our Brand</a><a href="#">Our Story</a><a href="#">Student Discount</a></div>
+      <div class="footer__block"><p class="footer__title">CUSTOMER SERVICE</p><a href="#">Shipping Info</a><a href="#">Returns &amp; Exchanges</a><a href="#">Order Tracking</a><a href="#">Payment Methods</a><a href="#">FAQs</a></div>
       <div class="footer__block"><p class="footer__title">PRIVACY &amp; TERMS</p><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Cookie Policy</a></div>
       <div class="footer__block"><p class="footer__title">GET IN TOUCH</p><a href="#">Email us</a></div>
       <div class="footer__block"><p class="footer__title">FOLLOW US</p><div class="footer__social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a><a href="#">TikTok</a></div></div>
     </div>
   </div>
+  <div class="footer-newsletter">
+    <div class="footer-newsletter__inner">
+      <div class="footer-newsletter__text"><strong>Subscribe Today And Get 15% Off</strong><p>Subscribe to the Zenith mailing list to receive updates on new arrivals, special offers and other discounts.</p></div>
+      <form class="footer-newsletter__form"><div class="footer-newsletter__field"><input type="email" placeholder="Enter your email" required /><button type="submit">Subscribe</button></div><p class="legal-text">By clicking Subscribe, I agree to receive promotional emails from Zenith and its <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p></form>
+    </div>
+  </div>
+  <div class="footer-payments"><span class="footer-payments__icon">PayPal</span><span class="footer-payments__icon">VISA</span><span class="footer-payments__icon">MasterCard</span><span class="footer-payments__icon">Maestro</span><span class="footer-payments__icon">Diners</span><span class="footer-payments__icon">Discover</span></div>
   <div class="footer-bottom"><span>&copy; 2026 Zenith Beauty. All rights reserved.</span></div>
 </footer>
 
